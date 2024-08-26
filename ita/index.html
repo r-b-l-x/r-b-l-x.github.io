@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .bg {
+            background-image: url('img.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 90%;
+            max-width: 600px;
+        }
+        .text {
+            font-size: 24px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .text-top {
+            text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+        }
+        .image-link img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .image-link img:hover {
+            transform: scale(1.05);
+        }
+        .clickable {
+            color: #4CAF50;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .clickable:hover {
+            color: #4CAF50;
+        }
+        @media screen and (max-width: 600px) {
+            .text {
+                font-size: 18px;
+            }
+            .image-link img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="content">
+            <div class="text text-top">TXT1A <a href="#" class="clickable">TXT1B</a></div>
+            <a href="https://" class="image-link" target="_blank">
+                <img src="img2.jpg" alt="Roblox">
+            </a>
+            <div class="text">txt2A <a href="#" class="clickable">TXT2B</a></div>
+        </div>
+    </div>
+</body>
+</html>
